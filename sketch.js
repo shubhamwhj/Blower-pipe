@@ -23,10 +23,10 @@ function setup() {
   ball = new Ball(width / 2 + 80, height / 2 - 80, 80, 80);
   blower = new Blower(width / 2 - 50, height / 2 + 50, 150, 20);
   blowerMouth = new BlowerMouth(width / 2 + 70, height / 2 + 20, 100, 90);
-  button = createButton("Click to Blow");
-  button.position(width / 2, height - 100);
-  button.class("blowButton");
-  button.mousePressed(blow);
+  btn2 = createImg('click.png');
+btn2.position(20,30);
+btn2.size(50,50);
+ btn2.mouseClicked(blow);
 }
 
 function draw() {
